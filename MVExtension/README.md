@@ -1,1 +1,1 @@
-*MIM metaverse extension solution*
+# MIM metaverse extension solution
