@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<B2BHouseKeepSolution>
+
+    <!-- Configuration parameter for all PowerShell connector script -->
+    <PowerShell>
+        <TenantName>domain.onmicrosoft.com</TenantName>
+	    <ClientID>XXXXXXX</ClientID>
+	    <ClientSecret>XXXXXXX</ClientSecret>
+        <LastLoginExtAttribute>extension_XXXXXXXXXX_LastLogin</LastLoginExtAttribute>
+    </PowerShell>
+
+    <!-- Configuration parameter for MIM MVExtension code -->
+    <MVExtension>
+
+        <!-- After these days in PendingInvite state the account will be deleted from AAD -->
+        <DaysAfterDeletePendingInvites>90</DaysAfterDeletePendingInvites>
+
+        <!-- After these days of last login the account will be deleted from AAD -->
+        <DaysAfterDeleteInactiveGuests>180</DaysAfterDeleteInactiveGuests>
+
+        <!-- Name of the MA for read/write Azure AD B2B User -->
+        <B2BUserConnectorName>B2BUserMA</B2BUserConnectorName>
+    </MVExtension>
+
+</B2BHouseKeepSolution>
+
